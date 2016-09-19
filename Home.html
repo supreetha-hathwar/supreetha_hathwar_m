@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+.mySlides {display:none;}
+
+.block{
+    display: inline-block;
+    width: 400px;
+    height: 350px;
+    margin: 10px;
+    border: 3px solid Gray;
+    align-content: center;
+}
+.block1{
+  display: inline-block;
+    width: 400px;
+    height: 380px;
+    margin: 10px;
+    border: 3px solid Gray;
+    align-content: center;
+}
+.img{
+  width:"20px";
+  height:"20px";
+}
+h3{
+  color:red;
+}
+h4{
+  color:red;
+}
+h5{
+  color:red;
+}
+button{
+  background-color: red;
+}
+.img1{
+  background-color: lightgray;
+}
+.right{
+  position: absolute;
+    right: 0px;
+    width:300px
+    }
+.right1{
+  position: absolute;
+    right: 5px;
+    width:100px;
+    }
+    .footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+p{
+  font-weight: 8px;
+  color:darkgrey;
+}
+.container{
+  background-color: brown;
+}
+
+</style>
+<body>
+back
+<a href="About.html">About</a>
+<a href="Signup.html">SignUp</a>
+
+<h2 class="img"><img src=gangout-logo.png alt="alternate"></h2>
+
+<!-- <div class="w3-content w3-section" style="max-width:500px"> -->
+<div style="max-width:500px">
+  <img class="mySlides" src="slider1.png" style="width:250%">
+  <img class="mySlides" src="slider2.png" style="width:250%">
+  <img class="mySlides" src="slider3.png" style="width:250%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
+<h3>Upcoming events</h3>
+
+<div class="block">
+  <h4>Event1</h4>
+  <img class="img1" src="default-image.png" width="290" height="100" alt="alternate">
+  <h5>Past event</h5>
+  <p>Core Ruby Workshop</p>
+  <img src="icon-location.png" ><p>Bangalore</p>
+  <img src="icon-calender.png">
+</div>
+
+<div class="block1">
+  <h4>Mysore Web Apps Engineering</h4>
+   <button type="button">Join</button></br>
+
+  <img class="img1" src="default-image.png" width="290" height="100" alt="alternate">
+    <h5>Past event</h5>
+  <p>Core Ruby Workshop</p>
+  <img src="icon-location.png" ><p>Bangalore</p>
+    <img src="icon-calender.png">
+ 
+</div>
+<div class="block">
+  <h4>Event3</h4>
+
+  <img class="img1" src="default-image.png" width="290" height="100" alt="alternate">
+    <h5>Past event</h5>
+  <p>Core Ruby Workshop</p>
+  <img src="icon-location.png" ><p>Bangalore</p>
+    <img src="icon-calender.png">
+</div>
+<div>
+<p>The New York Knowledge Engineering Meetup is a Meetup that aims to bring together the community of software professionals, </br>researchers, and enthusiasts, interested in how topic, such as Artificial Intelligence, Knowledge Representation and Reasoning,</br> Machine Learning,and Natural Language Processing fit together in the engineering of intelligent software system applications that</br> acquire, exploit, or create knowledge.</br>
+
+We seek to create a friendly yet stimulating environment for people to network and share knowledge on this topics, through a platform </br>of events and presentations. If you're interested in getting involved sign up and reach out. We look forward to connecting with you.</br>
+
+Join us Who do I know here?
+
+
+
+</p>
+</div>
+
+<div class="right">
+<h6>Date</h6>
+<h4>21 July 2016 Monday</h4>
+</div></br></br></br>
+
+<div class="right">
+<h6>venue</h6>
+<h4>Qwinix technologies</h4>
+<p>Horizon,Hiema Cinvention center Road,</br>
+Hebbal Industrial Estate 5,</br>
+Mysore-570022</p>
+</div></br></br></br></br></br></br></br>
+
+<div class="right">
+<h4>Attending</h4>
+Kishan</br>
+Daniel</br>
+Chippy</br>
+
+</div></br></br></br></br></br></br>
+
+<div class="container">
+<h1>About Us</h1>
+
+
+</div>
+<p>Gangout is world's largets network of local groups.Gangout makes it easy for anyone to organize localgroups or find one of the thousands meeting already face to face.</p>
+
+
+
+
+
+</body>
+</html>
+
